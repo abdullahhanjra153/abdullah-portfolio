@@ -1,0 +1,21 @@
+{
+  "name": "abdullah-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Abdullah Hanjra — Software Builder, creator of The Boring Company OS",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js --open",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "software-builder",
+    "theboringcompany",
+    "autonomous-engineering",
+    "static-site"
+  ],
+  "author": "Abdullah Hanjra",
+  "license": "MIT"
+}
