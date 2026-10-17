@@ -47,8 +47,127 @@
         <div class="project-info"><div class="project-meta"><span>PERSONAL PRODUCT</span><span class="pill pill-progress"><i></i> IN DEVELOPMENT</span></div><h3>Silaer</h3><p>A long-term product project built around one simple motivation: make everyday life easier for people. I've spent months working through implementation challenges, debugging, and refining the idea. Silaer is still in development and has not been publicly deployed.</p><div class="project-tags"><span>Product thinking</span><span>Iterative building</span><span>Problem solving</span></div><a class="project-link" href="https://www.linkedin.com/in/abdullahhanjracodes/" target="_blank" rel="noreferrer">Ask me about Silaer <span>↗</span></a></div>
       </article>
       <div class="project-grid">
-        <article class="project-card"><div class="mini-visual video-visual"><div class="screen-window"><div class="screen-bar"><b></b><b></b><b></b><span>EDIT / TIMELINE</span></div><div class="preview-frame"><div class="play">▶</div><span>YOUR STORY, REFINED.</span></div><div class="timeline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><span class="visual-number">02 / PRODUCT CONCEPT</span></div><div class="project-meta"><span>CREATIVE SOFTWARE</span><span class="pill">ONGOING</span></div><h3>Smart Video Editor</h3><p>An ongoing concept focused on making video creation and editing workflows more accessible and efficient.</p><div class="project-tags"><span>Workflow design</span><span>Product development</span></div></article>
-        <article class="project-card"><div class="mini-visual os-visual"><div class="org-node main-node">THE BORING COMPANY OS</div><div class="org-lines"><i></i><i></i><i></i></div><div class="org-nodes"><span>67 AGENTS</span><span>REALITY GATE</span><span>SQLITE LEDGER</span></div><div class="os-caption">AUTONOMOUS ENGINEERING · $? === 0</div><span class="visual-number">03 / RUNTIME ARCHITECTURE</span></div><div class="project-meta"><span>AUTONOMOUS RUNTIME</span><span class="pill pill-progress"><i></i> VERIFIED · OPEN SOURCE</span></div><h3>The Boring Company OS</h3><p>An autonomous AI software company runtime designed for production-grade engineering. Orchestrates 67 specialist agents through a hierarchical Executive Board, an unforgeable Reality Gate ($? === 0) requiring empirical test proof before completing tasks, and a tamper-proof SQLite audit ledger. Built with 0 runtime dependencies on Node.js 22+.</p><div class="project-tags"><span>67 Autonomous Agents</span><span>Reality Gate ($? === 0)</span><span>Executive Board</span><span>SQLite Ledger</span><span>Node.js 22+</span><span>Zero Dependencies</span></div><a class="project-link" href="https://github.com/abdullahhanjraa/theboringcompany" target="_blank" rel="noreferrer">Explore on GitHub <span>↗</span></a></article>
+        <article class="project-card">
+          <div class="mini-visual video-visual" id="videoVisual">
+            <div class="screen-window">
+              <div class="screen-bar"><b></b><b></b><b></b><span id="screenBarStatus">EDIT / TIMELINE</span></div>
+              <div class="preview-frame">
+                <button class="play interactive-play" id="videoPlayBtn" type="button" aria-label="Toggle timeline playback" title="Click to play demo timeline">▶</button>
+                <span id="previewFrameText">CLICK TO PLAY TIMELINE</span>
+              </div>
+              <div class="timeline" id="videoTimeline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <span class="visual-number">02 / PRODUCT CONCEPT · INTERACTIVE</span>
+          </div>
+          <div class="project-meta"><span>CREATIVE SOFTWARE</span><span class="pill">ONGOING CONCEPT</span></div>
+          <h3>Smart Video Editor</h3>
+          <p>An ongoing concept focused on making video creation and editing workflows more accessible and efficient through intelligent timeline automation.</p>
+          <div class="project-tags"><span>Workflow design</span><span>Interactive timeline</span><span>Product development</span></div>
+        </article>
+
+        <article class="project-card os-card">
+          <div class="mini-visual os-visual terminal-hud" id="terminalHud">
+            <div class="hud-top-bar">
+              <div class="hud-window-controls">
+                <span class="ctrl-dot ctrl-close" title="Terminal session"></span>
+                <span class="ctrl-dot ctrl-min"></span>
+                <span class="ctrl-dot ctrl-max"></span>
+              </div>
+              <div class="hud-title">theboringcompany-os · v3.1</div>
+              <div class="hud-status-badge"><span class="pulse-beacon"></span> ONLINE</div>
+            </div>
+
+            <div class="hud-tabs">
+              <button class="hud-tab active" type="button" data-tab="stream"><span>$</span> Live Stream</button>
+              <button class="hud-tab" type="button" data-tab="roster"><span>👥</span> Dream Team</button>
+              <button class="hud-tab" type="button" data-tab="gate"><span>🛡️</span> Reality Gate</button>
+            </div>
+
+            <div class="hud-body">
+              <!-- Tab 1: Terminal Stream -->
+              <div class="hud-pane active" id="pane-stream">
+                <div class="term-line prompt"><span class="t-green">visitor@boring-os</span>:<span class="t-blue">~</span>$ npx theboringcompany --mission "Verify Engine"</div>
+                <div class="term-line log"><span class="t-badge b-cpo">MICHAEL · CEO</span> <span class="t-muted">Convene Executive Board (Track B Sprint)</span></div>
+                <div class="term-line log"><span class="t-badge b-cto">STANLEY · CTO</span> <span class="t-muted">Architecture lock: Smallest Justified Design</span></div>
+                <div class="term-line log"><span class="t-badge b-red">DWIGHT · RED</span> <span class="t-muted">Sparring Round 1: 0 race conditions, 0 CVEs</span></div>
+                <div class="term-line log"><span class="t-badge b-dev">JIM · CODE</span> <span class="t-muted">Karpathy Razor: 18 lines modified cleanly</span></div>
+                <div class="term-line log success"><span class="t-badge b-gate">ANGELA · TDD</span> <span class="t-green">Reality Gate: 32/32 tests pass ($? === 0)</span></div>
+                <div class="term-line log cursor-line"><span class="t-muted">[SQLITE LEDGER]</span> Commit #77e51f8 verified.<span class="term-cursor"></span></div>
+              </div>
+
+              <!-- Tab 2: Dream Team Roster -->
+              <div class="hud-pane" id="pane-roster">
+                <div class="roster-grid">
+                  <div class="roster-card" title="Michael Scott — Supreme Conductor">
+                    <span class="roster-avatar">👔</span>
+                    <div class="roster-meta"><strong>Michael Scott</strong><span>Supreme Conductor & CEO</span></div>
+                  </div>
+                  <div class="roster-card" title="Dwight Schrute — Red Team Inquisitor">
+                    <span class="roster-avatar">🥊</span>
+                    <div class="roster-meta"><strong>Dwight Schrute</strong><span>Red Team Inquisitor</span></div>
+                  </div>
+                  <div class="roster-card" title="Jim Halpert — Minimal Change Lead">
+                    <span class="roster-avatar">💻</span>
+                    <div class="roster-meta"><strong>Jim Halpert</strong><span>Karpathy Razor Lead</span></div>
+                  </div>
+                  <div class="roster-card" title="Angela Martin — Reality Gate Auditor">
+                    <span class="roster-avatar">🛡️</span>
+                    <div class="roster-meta"><strong>Angela Martin</strong><span>Reality Gate Auditor</span></div>
+                  </div>
+                </div>
+                <div class="roster-note">+ 63 Domain Specialists (Backend, AppSec, DBRE, Mobile, SRE)</div>
+              </div>
+
+              <!-- Tab 3: Reality Gate Simulator -->
+              <div class="hud-pane" id="pane-gate">
+                <div class="gate-status-panel">
+                  <div class="gate-metric">
+                    <span class="metric-val" id="metricPass">32/32</span>
+                    <span class="metric-lbl">TEST SUITES</span>
+                  </div>
+                  <div class="gate-metric">
+                    <span class="metric-val" id="metricCode">$? === 0</span>
+                    <span class="metric-lbl">EXIT CODE</span>
+                  </div>
+                  <div class="gate-metric">
+                    <span class="metric-val" id="metricDrift">0.0%</span>
+                    <span class="metric-lbl">CODE DRIFT</span>
+                  </div>
+                </div>
+                <div class="gate-action-area">
+                  <button class="run-gate-btn" id="runGateBtn" type="button">
+                    <span class="btn-icon">▶</span>
+                    <span class="btn-text">RUN REALITY GATE TEST</span>
+                  </button>
+                  <div class="gate-run-output" id="gateRunOutput">Machine proof verified: Zero hallucinations allowed.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hud-footer">
+              <div class="hud-metrics">
+                <span><i class="dot-green"></i> 67 AGENTS ACTIVE</span>
+                <span><i class="dot-green"></i> 0 DEPENDENCIES</span>
+                <span><i class="dot-green"></i> SQLITE WAL</span>
+              </div>
+              <span class="hud-id">03 / INTERACTIVE RUNTIME</span>
+            </div>
+          </div>
+
+          <div class="project-meta"><span>AUTONOMOUS RUNTIME</span><span class="pill pill-progress"><i></i> VERIFIED · OPEN SOURCE</span></div>
+          <h3>The Boring Company OS</h3>
+          <p>An autonomous AI software company runtime designed for production-grade engineering. Orchestrates 67 specialist agents through a hierarchical Executive Board, an unforgeable Reality Gate ($? === 0) requiring empirical test proof before completing tasks, and a tamper-proof SQLite audit ledger. Built with 0 runtime dependencies on Node.js 22+.</p>
+
+          <div class="quickstart-box">
+            <code><span class="qs-prompt">$</span> npx theboringcompany --mission "build"</code>
+            <button class="copy-qs-btn" id="copyQsBtn" type="button" aria-label="Copy quickstart command" data-copy="npx theboringcompany --mission &quot;build&quot;">
+              <span class="copy-btn-text">Copy</span>
+            </button>
+          </div>
+
+          <div class="project-tags"><span>67 Autonomous Agents</span><span>Reality Gate ($? === 0)</span><span>Executive Board</span><span>SQLite Ledger</span><span>Node.js 22+</span><span>Zero Dependencies</span></div>
+          <a class="project-link" href="https://github.com/abdullahhanjraa/theboringcompany" target="_blank" rel="noreferrer">Explore on GitHub <span>↗</span></a>
+        </article>
       </div>
       <p class="honesty-note"><span>NOTE</span> Projects are presented at their actual stage of development. Where a public demo isn't available, I'm happy to discuss the work and share what can be shown.</p>
     </section>
