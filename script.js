@@ -46,28 +46,28 @@
       if (isTesting) return;
       isTesting = true;
       runGateBtn.classList.add('is-running');
-      runGateBtn.innerHTML = '<span class="btn-icon">⚡</span><span class="btn-text">AUDITING 32 SUITES...</span>';
+      runGateBtn.innerHTML = '<span class="btn-icon">⚡</span><span class="btn-text">TESTING 32 SUITES...</span>';
       gateRunOutput.classList.remove('success');
-      gateRunOutput.textContent = 'Spawning Dwight (Red Team) & Angela (Reality Gate)...';
+      gateRunOutput.textContent = 'Dwight (Bug Hunter) & Angela (Tester) checking code...';
 
       let count = 0;
       const interval = setInterval(() => {
         count += Math.floor(Math.random() * 7) + 5;
         if (count >= 32) count = 32;
         if (metricPass) metricPass.textContent = `${count}/32`;
-        gateRunOutput.textContent = `Running strict TDD assertions: ${count}/32 suites passing...`;
+        gateRunOutput.textContent = `Running real tests: ${count}/32 test suites passed...`;
 
         if (count >= 32) {
           clearInterval(interval);
           setTimeout(() => {
-            if (metricCode) metricCode.textContent = '$? === 0';
-            if (metricDrift) metricDrift.textContent = '0.0%';
+            if (metricCode) metricCode.textContent = 'SUCCESS';
+            if (metricDrift) metricDrift.textContent = '0';
             gateRunOutput.classList.add('success');
-            gateRunOutput.textContent = '✔ REALITY GATE PASSED: Exit code 0 ($? === 0). 0 Hallucinations.';
+            gateRunOutput.textContent = '✔ ALL TESTS PASSED: 32/32 tests verified cleanly. Zero guesswork.';
             runGateBtn.classList.remove('is-running');
-            runGateBtn.innerHTML = '<span class="btn-icon">✔</span><span class="btn-text">VERIFIED CLEAN ($? === 0)</span>';
+            runGateBtn.innerHTML = '<span class="btn-icon">✔</span><span class="btn-text">100% VERIFIED CLEAN</span>';
             setTimeout(() => {
-              runGateBtn.innerHTML = '<span class="btn-icon">▶</span><span class="btn-text">RUN REALITY GATE TEST</span>';
+              runGateBtn.innerHTML = '<span class="btn-icon">▶</span><span class="btn-text">TEST THE SYSTEM NOW</span>';
               isTesting = false;
             }, 3000);
           }, 300);

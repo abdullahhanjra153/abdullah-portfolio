@@ -8,9 +8,9 @@
 
 | Project | Domain | Status | Highlights |
 | :--- | :--- | :--- | :--- |
-| **[The Boring Company OS](https://github.com/abdullahhanjraa/theboringcompany)** | Autonomous AI Engineering | **Verified / Open Source** | 67 Specialist Agents · Reality Gate (`$? === 0`) · SQLite Audit Ledger · Zero Dependencies |
-| **Silaer** | Personal Product | In Development | Daily-life friction reducer · Iterative architecture · Native UX |
-| **Smart Video Editor** | Creative Software | Ongoing Concept | Timeline and video editing workflow streamlining |
+| **[The Boring Company OS](https://github.com/abdullahhanjraa/theboringcompany)** | AI Software Team | **Open Source** | 67 AI Teammates · Real Test Runner · Local Database Log · Zero Extra Installs |
+| **Silaer** | Fast Inbox App | In Development | Fast & distraction-free · Instant offline search · Clean keyboard-first design |
+| **Smart Video Editor** | Creator Tools | Ongoing Concept | Timeline automation to edit videos faster without repetitive work |
 
 ---
 
